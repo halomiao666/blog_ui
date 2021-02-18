@@ -1,20 +1,14 @@
 <template>
-  <div id="app">
-    <BlogHeader id="header" blogName="我的博客" />
-    <router-view></router-view>
-    <PopupLoginModal />
+  <div id="others">
+    <div class="haha">others</div>
   </div>
 </template>
 
 <script>
-import BlogHeader from "./components/BlogComponents/BlogHeader";
-import PopupLoginModal from "./components/login/PopModel";
 
 export default {
-  name: "App",
+  name: "Others",
   components: {
-    BlogHeader,
-    PopupLoginModal
   },
 };
 </script>
@@ -36,6 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   width: 100%;

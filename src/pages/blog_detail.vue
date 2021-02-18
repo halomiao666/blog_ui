@@ -1,26 +1,27 @@
 <template>
-  <div id="app">
-    <BlogHeader id="header" blogName="我的博客" />
-    <router-view></router-view>
-    <PopupLoginModal />
+  <div id="blog_detail">
+    <div id="detail">
+      <BlogSideBar id="side" msg="BlogSideBar" />
+      <BlogDetailContent id="maindetail" msg="BlogDetail" />
+    </div>
   </div>
 </template>
 
 <script>
-import BlogHeader from "./components/BlogComponents/BlogHeader";
-import PopupLoginModal from "./components/login/PopModel";
+import BlogSideBar from "../components/BlogComponents/BlogSideBar";
+import BlogDetailContent from "../components/BlogComponents/BlogDetail";
+
 
 export default {
-  name: "App",
+  name: "BlogDetail",
   components: {
-    BlogHeader,
-    PopupLoginModal
+    BlogSideBar,
+    BlogDetailContent
   },
 };
 </script>
 
 <style>
-
 html {
   width: 100%;
   height: 100%;
@@ -36,6 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -44,7 +46,7 @@ body {
 #header {
   width: 100%;
 }
-#content {
+#detail {
   width: 100%;
   height: 80%;
   display: flex;
