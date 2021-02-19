@@ -3,22 +3,22 @@
     <!-- <h1>{{ msg }}</h1> -->
     <ul>
       <li>
-        <a><span>JS</span></a>
+        <router-link :to="{name:'block',params:{blockname:'js'}}"><span>JS</span></router-link>
       </li>
       <li>
-        <a><span>ES6</span></a>
+        <router-link :to="{name:'block',params:{blockname:'es6'}}"><span>ES6</span></router-link>
       </li>
       <li>
-        <a><span>CSS</span></a>
+        <router-link :to="{name:'block',params:{blockname:'css'}}"><span>CSS</span></router-link>
       </li>
       <li>
-        <a><span>VUE</span></a>
+        <router-link :to="{name:'block',params:{blockname:'vue'}}"><span>VUE</span></router-link>
       </li>
       <li>
-        <a><span>React</span></a>
+        <router-link :to="{name:'block',params:{blockname:'react'}}"><span>React</span></router-link>
       </li>
       <li>
-        <a><span>Webpack</span></a>
+        <router-link :to="{name:'block',params:{blockname:'webpack'}}"><span>Webpack</span></router-link>
       </li>
     </ul>
   </div>

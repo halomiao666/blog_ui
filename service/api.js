@@ -25,6 +25,12 @@ export default {
             method: 'get',
             url,
         })
+    },
+    getBlockList(url) {
+        return myPlatformService({
+            method: 'get',
+            url,
+        })
     }
 
 }

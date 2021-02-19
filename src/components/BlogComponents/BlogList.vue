@@ -1,5 +1,5 @@
 <template>
-  <div class="blog_content">
+  <div class="blog_list">
     <ul>
       <li v-for="item in blogs" :key="item._id">
           <router-link :to="'/detail/'+item._id"><span>{{item.title}}</span></router-link>
@@ -11,7 +11,7 @@
 <script>
 import api from "../../../service/api";
 export default {
-  name: "BlogContent",
+  name: "BlogList",
   props: {
     msg: String,
   },
@@ -33,7 +33,6 @@ export default {
         .then((res) => {
           if (res.data.code === 1) {
             this.blogs = res.data.data
-            console.log("getBlogs", res.data.data);
           }
         })
         .catch((err) => {
@@ -68,6 +67,5 @@ span {
   color: #666;
   display: block;
   font-size: 12px;
-  text-align: left;
 }
 </style>

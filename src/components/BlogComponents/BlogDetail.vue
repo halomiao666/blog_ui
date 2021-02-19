@@ -1,5 +1,5 @@
 <template>
-  <div class="blog_detail_content">
+  <div class="blog_detail">
     <div v-html="blogDetail"></div>
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script>
 import api from "../../../service/api";
 export default {
-  name: "BlogDetailContent",
+  name: "BlogDetail",
   props: {
     msg: String,
   },
