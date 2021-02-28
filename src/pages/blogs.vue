@@ -95,7 +95,9 @@ body {
   width: 90%;
   height: 100%;
 }
-
+#blogdetail pre{
+  background: rgb(40, 44, 52);
+}
 #bottom {
   width: 100%;
   height: 10%;
