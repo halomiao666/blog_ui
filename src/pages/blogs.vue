@@ -40,7 +40,7 @@ export default {
     };
   },
   watch: {
-    '$route' : 'getPath'
+    $route: "getPath"
   },
   created() {
     this.getPath()
@@ -48,8 +48,7 @@ export default {
   methods: {
     getPath: function () {
       // console.log("path", this.$route.params.blockname);
-      this.path = this.$route
-
+      this.path = this.$route;
     },
   },
 };
@@ -97,6 +96,9 @@ body {
 }
 #blogdetail pre{
   background: rgb(40, 44, 52);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 15px;
 }
 #bottom {
   width: 100%;
