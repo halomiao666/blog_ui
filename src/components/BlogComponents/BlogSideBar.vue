@@ -20,6 +20,12 @@
       <li>
         <router-link :to="{name:'block',params:{blockname:'webpack'}}"><span>Webpack</span></router-link>
       </li>
+      <li>
+        <router-link :to="{name:'block',params:{blockname:'express'}}"><span>Express</span></router-link>
+      </li>
+      <li>
+        <router-link :to="{name:'block',params:{blockname:'mongo'}}"><span>Mongo</span></router-link>
+      </li>
     </ul>
   </div>
 </template>
